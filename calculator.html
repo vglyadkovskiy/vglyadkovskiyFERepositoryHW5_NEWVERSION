@@ -1,0 +1,99 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+     <title>Калькулятор</title>
+     <meta charset="utf-8" />
+     
+     
+     <link href="css/style.css" rel="stylesheet" />
+     <link href="css/bootstrap.css" rel="stylesheet" />
+     
+   </head>
+   <body>
+      <div class="container">
+      <header>
+            <div class="row">
+            
+               <div class="col-xs-3 col-sm-2 col-md-2"><a href="index.html"><img src="img/webLogo.png" class="img-thumbnail img-responsive" alt="Web-технологии" id="logo"style="margin-bottom: 20px;" /></a></div>
+               <div class="col-xs-9 col-sm-10 col-md-10"><h1 style="text-align: center">Основы Web-технологий</h1></div>  
+          
+               <div class="col-xs-12">               
+                  <nav class="navbar navbar-default">
+                     <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                        </button>
+                        <a href="index.html" class="navbar-brand">Главная</a>
+                     </div>
+                     <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                           <li class="webtech"><a href="technologies.html">Web-технологии</a></li>
+                           <li class="dropdown active">
+                              <a data-toggle="dropdown" class="dropdown-toggle"><b class="caret"></b></a>
+                                 <ul role="menu" class="webtech dropdown-menu">
+                                    <li><a href="html5.html">HTML5</a></li>
+                                    <li><a href="css3.html">CSS3</a></li>
+                                    <li><a href="javaScript.html">JavaScript</a></li>
+                                 </ul>
+                           </li>
+                           <li><a href="calculator.html">Калькулятор</a></li>
+                           <li><a href="test.html">Тест</a></li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+               
+            </div>   
+         </header>
+      
+      <div class="div1 col-xs-12" style="text-align: justify;">
+         <form id="calculator" name="calculator">
+            <table class="calculator table table-bordered table-condensed" style="width: 400px; margin-left: auto; margin-right: auto;">
+               <tr>
+                  <td colspan="5"><input type="text" id ="screen" name="text" class="screen bg-success" value="0" style="text-align: right; width: 100%; padding: 8px;" /></td>
+               </tr>
+               <tr>
+                  <td><button class="btn btn-info btn-block" type="button" id ="button7" name="button7" value="7">7</button></td>
+                  <td><button class="btn btn-info btn-block" type="button" id ="button8" name="button8" value="8">8</button></td>
+                  <td><button class="btn btn-info btn-block" type="button" id ="button9" name="button9" value="9">9</button></td>
+                  <td><button class="btn btn-primary btn-block" type="button" id ="buttonDivision" name="buttonDivision" value="/">/</button></td>
+                  <td><button class="btn btn-danger btn-block" type="button" id ="buttonC" name="buttonC">C</button></td>
+               </tr>
+               <tr>
+                  <td><button class="btn btn-info btn-block" type="button" id ="button4" name="button4" value="4">4</button></td>
+                  <td><button class="btn btn-info btn-block" type="button" id ="button5" name="button5" value="5">5</button></td>
+                  <td><button class="btn btn-info btn-block" type="button" id ="button6" name="button6" value="6">6</button></td>
+                  <td><button class="btn btn-primary btn-block" type="button" id ="buttonMultiplication" name="buttonMultiplication" value="*">*</button></td>
+                  <td><button class="btn btn-primary btn-block" type="button" id ="buttonSign" name="buttonSign">&plusmn;</button></td>
+               </tr>
+               <tr>
+                  <td><button class="btn btn-info btn-block" type="button" id ="button1" name="button1" value="1">1</button></td>
+                  <td><button class="btn btn-info btn-block" type="button" id ="button2" name="button2" value="2">2</button></td>
+                  <td><button class="btn btn-info btn-block" type="button" id ="button3" name="button3" value="3">3</button></td>
+                  <td><button class="btn btn-primary btn-block" type="button" id ="buttonSubtraction" name="buttonSubtraction" value="-">-</button></td>
+                  <td rowspan="2" class="equals" style="padding: 0; margin: 0;"><button class="btn btn-success btn-block" type="button" id ="buttonEquals" name="buttonEquals">=</button><br /> </td>
+               </tr>
+               <tr>
+                  <td colspan="2"><button class="btn btn-info btn-block" type="button" id ="button0" name="button0" value="0">0</button> </td>
+                  <td><button class="btn btn-info btn-block" type="button" id ="buttonDot" name="buttonDot" value=".">.</button></td>
+                  <td><button class="btn btn-primary btn-block" type="button" id ="buttonAddition" name="buttonAddition" value="+">+</button></td>
+               </tr>            
+            </table>
+         </form>
+      </div>
+      
+      <footer class="col-xs-12" style="text-align: center">
+         <address>
+            <a href="mailto:glycerine08@gmail.com">Пишите: glycerine08@gmail.com</a>
+         </address>
+         <p>© Глядковский В.Ю., 2017</p>
+      </footer>
+     
+      <script src="js/jquery-3.1.1.js"></script>
+      <script src="js/script.js"></script>
+      <script src="js/bootstrap.js"></script>
+      </div> 
+   </body>
+</html>

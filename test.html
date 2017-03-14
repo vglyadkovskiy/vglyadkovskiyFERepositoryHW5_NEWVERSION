@@ -1,0 +1,111 @@
+<!DOCTYPE HTML>
+<html>
+   <head>
+     <title>Тест</title>
+     <meta charset="utf-8" />
+     <link href="css/bootstrap.css" rel="stylesheet" />
+     
+   </head>
+   <body>
+      <div class="container">
+      <header>
+            <div class="row">
+            
+               <div class="col-xs-3 col-sm-2 col-md-2"><a href="index.html"><img src="img/webLogo.png" class="img-thumbnail img-responsive" alt="Web-технологии" id="logo"style="margin-bottom: 20px;" /></a></div>
+               <div class="col-xs-9 col-sm-10 col-md-10"><h1 style="text-align: center">Основы Web-технологий</h1></div>  
+          
+               <div class="col-xs-12">               
+                  <nav class="navbar navbar-default">
+                     <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                           <span class="icon-bar"></span>
+                        </button>
+                        <a href="index.html" class="navbar-brand">Главная</a>
+                     </div>
+                     <div class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                           <li class="webtech"><a href="technologies.html">Web-технологии</a></li>
+                           <li class="dropdown active">
+                              <a data-toggle="dropdown" class="dropdown-toggle"><b class="caret"></b></a>
+                                 <ul role="menu" class="webtech dropdown-menu">
+                                    <li><a href="html5.html">HTML5</a></li>
+                                    <li><a href="css3.html">CSS3</a></li>
+                                    <li><a href="javaScript.html">JavaScript</a></li>
+                                 </ul>
+                           </li>
+                           <li><a href="calculator.html">Калькулятор</a></li>
+                           <li><a href="test.html">Тест</a></li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+               
+            </div>   
+         </header>
+      
+      <div class="div1 col-xs-12" style="text-align: justify;">
+         <form id="test" name="fetest">
+            <p>Какой тег предназначен для создания ссылок:<br />
+            <input id="rad11" type="radio" name="link" value="1" />&lt;a><br />
+            <input id="rad12" type="radio" name="link" value="2" />&lt;a /><br />
+            <input id="rad13" type="radio" name="link" value="3" />&lt;ref><br />
+            <input id="rad14" type="radio" name="link" value="4" />&lt;ref><br /></p>
+            <p>Какой тег предназначен для создания нумерованного списка:<br />
+            <input id="rad21" type="radio" name="olist" value="1" />&lt;li><br />
+            <input id="rad22" type="radio" name="olist" value="2" />&lt;dl><br />
+            <input id="rad23" type="radio" name="olist" value="3" />&lt;ol><br />
+            <input id="rad24" type="radio" name="olist" value="4" />&lt;ul><br /></p>
+            <p>Какой тег предназначен для передачи служебной информации браузеру:<br />
+            <input id="rad31" type="radio" name="information" value="1" />&lt;info><br />
+            <input id="rad32" type="radio" name="information" value="2" />&lt;info /><br />
+            <input id="rad33" type="radio" name="information" value="3" />&lt;meta><br />
+            <input id="rad34" type="radio" name="information" value="4" />&lt;meta /><br /></p>
+            <p>Какие теги используются при создании таблицы:<br />
+            <input id="chb11" type="checkbox" name="table" value="1" />&lt;bodyt><br />
+            <input id="chb12" type="checkbox" name="table" value="2" />&lt;td><br />
+            <input id="chb13" type="checkbox" name="table" value="3" />&lt;caption><br />
+            <input id="chb14" type="checkbox" name="table" value="4" />&lt;column><br /></p>
+            <p>Какие атрибуты используются при создании форм:<br />
+            <input id="chb21" type="checkbox" name="form" value="1" />autocomplete<br />
+            <input id="chb22" type="checkbox" name="form" value="2" />action<br />
+            <input id="chb23" type="checkbox" name="form" value="3" />charset<br />
+            <input id="chb24" type="checkbox" name="form" value="4" />validate<br /></p>
+            
+            <p><button id="buttonResult" type="button" name="result" class="result btn btn-success" data-toggle="modal" data-target="#modalResult">Результат <i class="glyphicon glyphicon-thumbs-up"></i></button></p>            
+            
+               <div id="modalResult" class="modal">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <button type="button" class="close" data-dismiss="modal">×</button>
+                           <h4>Your RESULT:</h4>
+                        </div>
+                        <div id="res" class="modal-body">
+                           Содержимое модального окна
+                        </div>
+                        <div class="modal-footer">
+                           <button type="button" class="btn btn-default" data-dismiss="modal">Закрыть</button>
+                           
+                        </div>
+                     </div>
+                  </div>
+               </div>   
+               
+         </form>   
+      </div>   
+      
+      <footer class="col-xs-12" style="text-align: center">
+         <address>
+            <a href="mailto:glycerine08@gmail.com">Пишите: glycerine08@gmail.com</a>
+         </address>
+         <p>© Глядковский В.Ю., 2017</p>
+      </footer>
+      
+      <script src="js/jquery-3.1.1.js"></script>
+      <script src="js/script2.js"></script>
+      <script src="js/bootstrap.js"></script>
+      </div> 
+   </body>
+</html>
